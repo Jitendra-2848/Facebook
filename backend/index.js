@@ -15,7 +15,7 @@ server.use(express.json());
 
 mongo.connect(process.env.MONGO_URL)
     .then(() => console.log("MongoDB connected..."))
-    .catch((e) => console.error("Mongo error:", e.message));
+    .catch((e) => console.error("Mongo error:", e));
 
 
 server.use(route);
