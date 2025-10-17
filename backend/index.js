@@ -13,7 +13,7 @@ server.use(cors({
 }));
 server.use(express.json());
 
-mongo.connect(process.env.MONGO_URL)
+mongo.connect(`mongodb+srv://prajapatijitendra2848_db_user:rQr2nn6xL2HbZRjg@e-commerce.95z2us2.mongodb.net/?retryWrites=true&w=majority&appName=E-commerce`)
     .then(() => console.log("MongoDB connected..."))
     .catch((e) => console.error("Mongo error:", e.message));
 
